@@ -1,10 +1,10 @@
 # XR Blog
 
-> 下面是博客的搭建教程，这个教程全面参考自[柏荧的教程](https://www.jianshu.com/p/e68fba58f75c) 
+> 下面是本博客的搭建教程，这个教程全面参考自[柏荧的教程](https://www.jianshu.com/p/e68fba58f75c) 
 > 
-### [我的博客在这里 &rarr;](http://xiaoran-tang.github.io)
+### [肖然的博客在这里 &rarr;](http://xiaoran-tang.github.io)
 
-![](https://raw.githubusercontent.com/qiubaiying/qiubaiying.github.io/master/img/readme-home.png)
+![](https://raw.githubusercontent.com/xiaoran-tang/xiaoran-tang.github.io/master/img/readme-home.png)
 
 
 ## 使用
@@ -34,7 +34,14 @@
 
 要使用 GitHub Pages，首先你要注册一个GitHub账号，GitHub 是全球最大的同性交友网站(吐槽下程序员~)，你值得拥有。
 
-![](https://raw.githubusercontent.com/qiubaiying/qiubaiying.github.io/master/img/github-signup.png)
+![](https://raw.githubusercontent.com/xiaoran-tang/xiaoran-tang.github.io/master/img/github-signup.png)
+
+
+### 拉取我的博客模板
+
+注册完成后点击进入[我的仓库](https://github.com/Xiaoran-Tang/xiaoran-tang.github.io) 
+
+
 
 
 ```
