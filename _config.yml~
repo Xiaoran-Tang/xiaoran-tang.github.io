@@ -3,7 +3,7 @@ title: XR Blog
 SEOTitle: 唐肖然的博客 | XR Blog
 header-img: img/post-bg-desk.jpg
 email: x_t9@txstate.edu
-description: "Every failure is leading towards success."
+description: "Software Engineer"
 keyword: "XR, XR Blog, 肖然的博客"
 url: "http://xiaoran-tang.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
@@ -93,14 +93,5 @@ friends: [
     {
         title: "Xiao Tian",
         href: "http://ritaxiaotian.github.io"
-    },{
-        title: "简书·BY",
-        href: "http://www.jianshu.com/u/e71990ada2fd"
-    },{
-        title: "Apple",
-        href: "https://apple.com"
-    },{
-        title: "Apple Developer",
-        href: "https://developer.apple.com/"
     }
 ]
