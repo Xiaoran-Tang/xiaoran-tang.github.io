@@ -1,6 +1,6 @@
 # XR Blog
 
-本博客全面参考自[柏荧的教程](https://www.jianshu.com/p/e68fba58f75c) 
+本博客模板来自[柏荧的教程](https://www.jianshu.com/p/e68fba58f75c) 
 > 
 ### [肖然的博客 &rarr;](http://xiaoran-tang.github.io)
 
