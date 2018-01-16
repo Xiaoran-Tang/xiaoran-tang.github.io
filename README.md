@@ -1,10 +1,8 @@
-# BY Blog
+# XR Blog
 
-> 下面是博客的搭建教程，这个教程修改自 [Hux](https://github.com/Huxpro/huxpro.github.io) 。
+> 下面是博客的搭建教程，这个教程全面参考自[柏荧的教程](https://www.jianshu.com/p/e68fba58f75c) 
 > 
-> 更为详细的教程[《利用 GitHub Pages 快速搭建个人博客》](http://www.jianshu.com/p/e68fba58f75c) 
-> 
-### [我的博客在这里 &rarr;](http://qiubaiying.github.io)
+### [我的博客在这里 &rarr;](http://xiaoran-tang.github.io)
 
 ![](https://raw.githubusercontent.com/qiubaiying/qiubaiying.github.io/master/img/readme-home.png)
 
@@ -12,8 +10,7 @@
 ## 使用
 
 * 开始
-	* [环境](#环境)
-	* [开始](#开始)
+	* [快速开始](#快速开始)
 	* [撰写博文](#撰写博文)
 * 组件
 	* [侧边栏](#侧边栏)
@@ -31,15 +28,14 @@
 
 
 
-### 环境
+### 快速开始
 
-如果你安装了 [jekyll](http://jekyllcn.com/)，那你只需要在命令行输入`jekyll serve` 或 `jekyll s`就能在本地浏览器中输入`http://127.0.0.1:4000/`预览主题，对主题的修改也能实时展示（需要强刷浏览器）。
+从注册一个Github账号开始
 
+要使用 GitHub Pages，首先你要注册一个GitHub账号，GitHub 是全球最大的同性交友网站(吐槽下程序员~)，你值得拥有。
 
+![](https://raw.githubusercontent.com/qiubaiying/qiubaiying.github.io/master/img/github-signup.png)
 
-### 开始
-
-你可以通用修改 `_config.yml`文件来轻松的开始搭建自己的博客:
 
 ```
 # Site settings
