@@ -3,7 +3,7 @@ layout:             post
 title:                 Software Testing
 subtitle:           软件测试领域 近些年的学术发展
 date:      	        2018-01-29
-author:             XR
+author:             Shaw
 header-img:     img/post-bg-unix-linux.jpg
 catalog: 	         true
 tags:
