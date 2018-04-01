@@ -1,6 +1,6 @@
 ---
 layout:             post
-title:                 Install NVIDIA GPU driver
+title:                 NVIDIA GPU driver
 subtitle:          在 Ubuntu 16.04 上安装英伟达驱动
 date:      	         2018-03-31
 author:             Shaw
@@ -26,9 +26,9 @@ tags:
 sudo apt-get remove --purge nvidia*
 ```
 - nouveau禁止命令写入文件
+
 ```sh
 sudo nano /etc/modprobe.d/blacklist-nouveau.conf
-
 # 在文件 blacklist-nouveau.conf 中加入如下内容：
 blacklist nouveau
 blacklist lbm-nouveau
@@ -38,9 +38,11 @@ alias lbm-nouveau off
 ```
 
 - 调用指令禁止nouveau
+
 ```sh
 echo options nouveau modeset=0 | sudo tee -a /etc/modprobe.d/nouveau-kms.conf
 ```
+
 - 建立新的内核
 ```sh
 sudo update-initramfs -u
