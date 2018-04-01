@@ -26,7 +26,6 @@ tags:
 sudo apt-get remove --purge nvidia*
 ```
 - nouveau禁止命令写入文件
-
 ```sh
 sudo nano /etc/modprobe.d/blacklist-nouveau.conf
 # 在文件 blacklist-nouveau.conf 中加入如下内容：
@@ -36,13 +35,10 @@ options nouveau modeset=0
 alias nouveau off
 alias lbm-nouveau off
 ```
-
 - 调用指令禁止nouveau
-
 ```sh
 echo options nouveau modeset=0 | sudo tee -a /etc/modprobe.d/nouveau-kms.conf
 ```
-
 - 建立新的内核
 ```sh
 sudo update-initramfs -u
@@ -63,7 +59,6 @@ ctrl + alt + F1
 sudo service lightdm stop
 sudo init 3
 ```
-
 - 切换到 NVIDIA 安装包指定目录，赋予权限并进行安装
 ```sh
 cd Downloads/
