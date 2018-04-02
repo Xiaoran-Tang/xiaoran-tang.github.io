@@ -76,7 +76,7 @@ sudo reboot
 ```sh
 nvidia-smi
 ```
-如果大致显示下列输出，那么驱动已安装
+- 如果大致显示下列输出，那么驱动已顺利安装
 ```
 Mon Sep 15 16:02:31 2014       
 +------------------------------------------------------+                       
@@ -99,7 +99,6 @@ Mon Sep 15 16:02:31 2014
 
 5、性能测试
 -
-
 - 第一个测试程序是 Glxgers
 ```sh
 sudo apt-get install mesa-utils
@@ -108,7 +107,8 @@ glxgears
 值得注意的有两个点，一个是 GPU 的风扇是否运转，运转则 OK；另一个是 FPS(Frame Per Second) 的值，这个值越高越好（差一点的显卡大概是 60 FPS）。
 
 - 第二个测试程序是 geeks3d's GpuTest
-	- 去这个链接 www.geeks3d.com/gputest/download 下载压缩包到 `~/Downloads`，然后运行
+	- 去这个 [链接](www.geeks3d.com/gputest/download) 下载压缩包到 `~/Downloads`
+	- 然后运行
 ```sh
 cd ~/Downloads
 unzip GpuTest_Linux_x64_0.7.0.zip
