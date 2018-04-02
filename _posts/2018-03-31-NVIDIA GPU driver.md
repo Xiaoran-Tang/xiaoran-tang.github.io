@@ -13,7 +13,8 @@ tags:
 > 最近自己买各种电脑硬件，给女票组装了一部台式机做 machine learning。硬件中包括 [NVIDIA GeForce GTX 1060 6GB](https://www.nvidia.com/en-us/geforce/products/10series/geforce-gtx-1060/) 独立显卡。各个零件大致根据 [这个视频教程](https://www.youtube.com/watch?v=0bUghCx9iso) 进行硬件组装。操作系统是 Ubuntu 16.04。
 
 
-> 本文参考 [这篇](https://blog.csdn.net/lhx_998/article/details/76135936) 和 [这篇](https://gist.github.com/dangbiao1991/7825db1d17df9231f4101f034ecd5a2b) 中文文档
+> 本文第2、3节参考 [
+lhx_998](https://blog.csdn.net/lhx_998/article/details/76135936) 和 [dangbiao1991](https://gist.github.com/dangbiao1991/7825db1d17df9231f4101f034ecd5a2b) 的中文文档。第4节参考 [pc-suggest](https://www.pcsuggest.com/gpu-benchmarking-and-stress-testing-in-linux/) 。
 
 1、驱动安装文件下载
 -
@@ -69,6 +70,52 @@ sudo sh NVIDIA-Linux-x86_64-390.48.run --no-opengl-files
 ```sh
 sudo reboot
 ```
+4、检验驱动已安装
+-
+- 运行
+```sh
+nvidia-smi
+```
+如果大致显示下列输出，那么驱动已安装
+```
+Mon Sep 15 16:02:31 2014       
++------------------------------------------------------+                       
+| NVIDIA-SMI 340.32     Driver Version: 340.32         |                       
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  GeForce GT 650M     Off  | 0000:01:00.0     N/A |                  N/A |
+| N/A   59C    P0    N/A /  N/A |      8MiB /  2047MiB |     N/A      Default |
++-------------------------------+----------------------+----------------------+
 
-4、安装完毕
++-----------------------------------------------------------------------------+
+| Compute processes:                                               GPU Memory |
+|  GPU       PID  Process name                                     Usage      |
+|=============================================================================|
+|    0            Not Supported                                               |
++-----------------------------------------------------------------------------+
+```
+
+5、性能测试
+-
+
+- 第一个测试程序是 Glxgers
+```sh
+sudo apt-get install mesa-utils
+glxgears
+```
+值得注意的有两个点，一个是 GPU 的风扇是否运转，运转则 OK；另一个是 FPS(Frame Per Second) 的值，这个值越高越好（差一点的显卡大概是 60 FPS）。
+
+- 第二个测试程序是 geeks3d's GpuTest
+	- 去这个链接 www.geeks3d.com/gputest/download 下载压缩包到 `~/Downloads`，然后运行
+```sh
+cd ~/Downloads
+unzip GpuTest_Linux_x64_0.7.0.zip
+cd GpuTest_Linux_x64_0.7.0/
+./GpuTest /test=fur /width=800 /height=600 /benchmark
+```
+测试结果：我的 GPU 能达到 200+ FPS
+
+6、安装完毕
 -
