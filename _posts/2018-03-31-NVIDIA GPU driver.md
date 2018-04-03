@@ -70,6 +70,7 @@ sudo sh NVIDIA-Linux-x86_64-390.48.run --no-opengl-files
 ```sh
 sudo reboot
 ```
+
 4、检验驱动已安装
 -
 - 运行
@@ -77,7 +78,6 @@ sudo reboot
 nvidia-smi
 ```
 - 如果大致显示下列输出，那么驱动已顺利安装
-
 ```sh
 Mon Sep 15 16:02:31 2014       
 +------------------------------------------------------+                       
