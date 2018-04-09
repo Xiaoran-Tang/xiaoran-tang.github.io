@@ -1,7 +1,7 @@
 ---
 layout:             post
 title:                 Code Review
-subtitle:          软件开发基础知识
+subtitle:          代码走查
 date:      	         2018-03-30
 author:             Shaw
 header-img:     img/post-bg-re-vs-ng2.jpg
