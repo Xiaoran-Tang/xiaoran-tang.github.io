@@ -37,10 +37,10 @@ Lucene 是当前最先进、功能最强大的搜索库。但是，直接基于 
 
 而 Elasticsearch 基于 Lucene，隐藏了复杂性，提供简单易用的 RESTful API 接口、Java API 接口（以及其他语言的api接口）。具体特征有：
 
-（1）分布式的文档存储引擎，支持PB级数据
-（2）分布式的搜索引擎和分析引擎
-（3）开箱即用，优秀的默认参数，不需要任何额外设置
-（4）完全开源
+- 分布式的文档存储引擎，支持PB级数据
+- 分布式的搜索引擎和分析引擎
+- 开箱即用，优秀的默认参数，不需要任何额外设置
+- 完全开源
 
 
 关于 Elasticsearch，有一个传说：有一个程序员失业了，陪着自己妻子去英国伦敦学习厨师课程。程序员在失业期间想给妻子写一个菜谱搜索引擎，觉得 Lucene 实在太复杂了，就开发了一个封装了 Lucene 的开源项目：Compass。后来程序员找到了工作，是做分布式的高性能项目的，觉得 Compass 不够，就写了 Elasticsearch，让 Lucene 变成分布式的系统。
@@ -59,11 +59,11 @@ Elasticsearch 与日志的关系
 
 ![](https://raw.githubusercontent.com/xiaoran-tang/xiaoran-tang.github.io/master/img/Kibana.png)
 
-除了查看日志外，它自身的组件架构支持通过代理对不同服务器的日志流进行管理，并最终传送至ElasticSearch中。
+除了查看日志外，它自身的组件架构支持通过代理对不同服务器的日志流进行管理，并最终传送至 Elasticsearch 中。
 
 ELK架构
 -
 
-![](https://raw.githubusercontent.com/xiaoran-tang/xiaoran-tang.github.io/master/img/ELK.png)
+![](https://raw.githubusercontent.com/xiaoran-tang/xiaoran-tang.github.io/master/img/ELK.jpg)
 
 从上图的架构可以看出，Logstash 在各个应用中设置一个 Shipper 用来收集并转化为统一格式的日志数据，然后将其转入 Message Broker (通常是 Redis)，然后日志中心的 Indexer (也是 Logstash)负责从 Broker 中读取日志流，并转存至 ElasticSearch 中建立索引，以便日后快速查看、搜索、分析。Kibana 是一个功能强大、丰富的 Web 界面，它从 ElasticSearch 中读取数据，支持各种查询、展示。
