@@ -3,7 +3,7 @@ layout:             post
 title:                 NVIDIA GPU driver
 subtitle:          在 Ubuntu 16.04 上安装英伟达驱动
 date:      	         2018-03-31
-author:             Shaw
+author:             Xiaoran
 header-img:     img/Nvidia-GeForce.jpg
 catalog: 	         true
 tags:

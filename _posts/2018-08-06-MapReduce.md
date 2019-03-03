@@ -3,7 +3,7 @@ layout:             post
 title:                 MapReduce
 subtitle:           Hadoop 的算法
 date:      	        2018-08-06
-author:             Shaw
+author:             Xiaoran
 header-img:     img/post-bg-debug.png
 catalog: 	         true
 tags:
